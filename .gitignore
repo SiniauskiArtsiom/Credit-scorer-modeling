@@ -1,0 +1,83 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# ---------- Virtualenv ----------
+venv/
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---------- Тесты / линтеры ----------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.hypothesis/
+
+# ---------- ML / эксперименты ----------
+mlruns/                # MLflow
+wandb/                 # Weights & Biases
+lightning_logs/
+outputs/
+artifacts/
+models/*.pkl
+models/*.joblib
+models/*.ubj
+models/*.json
+*.h5
+*.ckpt
+*.pt
+*.onnx
+.hyperopt/
+
+# ---------- Данные ----------
+data/raw/
+data/interim/
+data/processed/
+data/external/
+*.csv
+*.parquet
+*.feather
+*.pkl
+*.joblib
+*.h5
+*.zip
+*.7z
+
+# ---------- Секреты / конфиги ----------
+.env
+.env.*
+!.env.example
+*.key
+secrets.yaml
+configs/local.yaml
+
+# ---------- Логи ----------
+*.log
+logs/
+
+# ---------- IDE / OS ----------
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ---------- Прочее ----------
+.cache/
+tmp/
+*.bak
