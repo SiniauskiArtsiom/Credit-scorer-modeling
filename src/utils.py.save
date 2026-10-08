@@ -1,0 +1,11 @@
+import pandas as pd
+
+def df_summary(df: pd.DataFrame) -> pd.DataFrame:
+    return pd.DataFrame({
+        "dtype":       df.dtypes.astype(str),
+        "n_missing":   df.isna().sum(),
+        "pct_missing": (df.isna().mean() * 100).round(2),
+        "n_unique":    df.nunique(dropna=True),
+        "sample":      df.iloc[0] if len(df) else None,
+    }).sort_values("pct_missing", ascending=False)
+
