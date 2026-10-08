@@ -13,135 +13,443 @@ split:
   seed: 42
 columns:
   drop:
-  - SK_ID_CURR
-  categorical:
-  - NAME_CONTRACT_TYPE
-  - CODE_GENDER
-  - FLAG_OWN_CAR
-  - FLAG_OWN_REALTY
-  - NAME_TYPE_SUITE
-  - NAME_INCOME_TYPE
-  - NAME_EDUCATION_TYPE
-  - NAME_FAMILY_STATUS
-  - NAME_HOUSING_TYPE
-  - OCCUPATION_TYPE
-  - WEEKDAY_APPR_PROCESS_START
-  - ORGANIZATION_TYPE
-  - FONDKAPREMONT_MODE
-  - HOUSETYPE_MODE
-  - WALLSMATERIAL_MODE
-  - EMERGENCYSTATE_MODE
-  flag:
-  - FLAG_MOBIL
-  - FLAG_EMP_PHONE
-  - FLAG_WORK_PHONE
-  - FLAG_CONT_MOBILE
-  - FLAG_PHONE
-  - FLAG_EMAIL
-  - REG_REGION_NOT_LIVE_REGION
-  - REG_REGION_NOT_WORK_REGION
-  - LIVE_REGION_NOT_WORK_REGION
-  - REG_CITY_NOT_LIVE_CITY
-  - REG_CITY_NOT_WORK_CITY
-  - LIVE_CITY_NOT_WORK_CITY
-  - FLAG_DOCUMENT_2
-  - FLAG_DOCUMENT_3
-  - FLAG_DOCUMENT_4
-  - FLAG_DOCUMENT_5
-  - FLAG_DOCUMENT_6
-  - FLAG_DOCUMENT_7
-  - FLAG_DOCUMENT_8
-  - FLAG_DOCUMENT_9
-  - FLAG_DOCUMENT_10
-  - FLAG_DOCUMENT_11
-  - FLAG_DOCUMENT_12
-  - FLAG_DOCUMENT_13
-  - FLAG_DOCUMENT_14
-  - FLAG_DOCUMENT_15
-  - FLAG_DOCUMENT_16
-  - FLAG_DOCUMENT_17
-  - FLAG_DOCUMENT_18
-  - FLAG_DOCUMENT_19
-  - FLAG_DOCUMENT_20
-  - FLAG_DOCUMENT_21
-  numeric:
-  - CNT_CHILDREN
-  - AMT_INCOME_TOTAL
   - AMT_CREDIT
-  - AMT_ANNUITY
-  - AMT_GOODS_PRICE
-  - REGION_POPULATION_RELATIVE
-  - DAYS_BIRTH
-  - DAYS_EMPLOYED
-  - DAYS_REGISTRATION
-  - DAYS_ID_PUBLISH
-  - OWN_CAR_AGE
-  - CNT_FAM_MEMBERS
-  - REGION_RATING_CLIENT
-  - REGION_RATING_CLIENT_W_CITY
-  - HOUR_APPR_PROCESS_START
-  - EXT_SOURCE_1
-  - EXT_SOURCE_2
-  - EXT_SOURCE_3
-  - APARTMENTS_AVG
-  - BASEMENTAREA_AVG
-  - YEARS_BEGINEXPLUATATION_AVG
-  - YEARS_BUILD_AVG
-  - COMMONAREA_AVG
-  - ELEVATORS_AVG
-  - ENTRANCES_AVG
-  - FLOORSMAX_AVG
-  - FLOORSMIN_AVG
-  - LANDAREA_AVG
-  - LIVINGAPARTMENTS_AVG
-  - LIVINGAREA_AVG
-  - NONLIVINGAPARTMENTS_AVG
-  - NONLIVINGAREA_AVG
-  - APARTMENTS_MODE
-  - BASEMENTAREA_MODE
-  - YEARS_BEGINEXPLUATATION_MODE
-  - YEARS_BUILD_MODE
-  - COMMONAREA_MODE
-  - ELEVATORS_MODE
-  - ENTRANCES_MODE
-  - FLOORSMAX_MODE
-  - FLOORSMIN_MODE
-  - LANDAREA_MODE
-  - LIVINGAPARTMENTS_MODE
-  - LIVINGAREA_MODE
-  - NONLIVINGAPARTMENTS_MODE
-  - NONLIVINGAREA_MODE
-  - APARTMENTS_MEDI
-  - BASEMENTAREA_MEDI
-  - YEARS_BEGINEXPLUATATION_MEDI
-  - YEARS_BUILD_MEDI
-  - COMMONAREA_MEDI
-  - ELEVATORS_MEDI
-  - ENTRANCES_MEDI
-  - FLOORSMAX_MEDI
-  - FLOORSMIN_MEDI
-  - LANDAREA_MEDI
-  - LIVINGAPARTMENTS_MEDI
-  - LIVINGAREA_MEDI
-  - NONLIVINGAPARTMENTS_MEDI
-  - NONLIVINGAREA_MEDI
-  - TOTALAREA_MODE
-  - OBS_30_CNT_SOCIAL_CIRCLE
-  - DEF_30_CNT_SOCIAL_CIRCLE
-  - OBS_60_CNT_SOCIAL_CIRCLE
-  - DEF_60_CNT_SOCIAL_CIRCLE
-  - DAYS_LAST_PHONE_CHANGE
-  - AMT_REQ_CREDIT_BUREAU_HOUR
+  - AMT_INCOME_TOTAL
   - AMT_REQ_CREDIT_BUREAU_DAY
-  - AMT_REQ_CREDIT_BUREAU_WEEK
+  - AMT_REQ_CREDIT_BUREAU_HOUR
   - AMT_REQ_CREDIT_BUREAU_MON
   - AMT_REQ_CREDIT_BUREAU_QRT
+  - AMT_REQ_CREDIT_BUREAU_WEEK
   - AMT_REQ_CREDIT_BUREAU_YEAR
-  sensor:
+  - APARTMENTS_AVG
+  - APARTMENTS_MEDI
+  - APARTMENTS_MODE
+  - BASEMENTAREA_AVG
+  - BASEMENTAREA_MEDI
+  - BASEMENTAREA_MODE
+  - CNT_CHILDREN
+  - CNT_FAM_MEMBERS
+  - COMMONAREA_AVG
+  - COMMONAREA_MEDI
+  - COMMONAREA_MODE
+  - DEF_30_CNT_SOCIAL_CIRCLE
+  - DEF_60_CNT_SOCIAL_CIRCLE
+  - ELEVATORS_MODE
+  - ENTRANCES_AVG
+  - ENTRANCES_MEDI
+  - ENTRANCES_MODE
+  - FLOORSMIN_AVG
+  - FLOORSMIN_MEDI
+  - FLOORSMIN_MODE
+  - FONDKAPREMONT_MODE
+  - HOUR_APPR_PROCESS_START
+  - LANDAREA_AVG
+  - LANDAREA_MEDI
+  - LANDAREA_MODE
+  - LIVINGAPARTMENTS_AVG
+  - LIVINGAPARTMENTS_MEDI
+  - LIVINGAPARTMENTS_MODE
+  - LIVINGAREA_AVG
+  - LIVINGAREA_MODE
+  - NAME_TYPE_SUITE
+  - NONLIVINGAPARTMENTS_AVG
+  - NONLIVINGAPARTMENTS_MEDI
+  - NONLIVINGAPARTMENTS_MODE
+  - NONLIVINGAREA_AVG
+  - NONLIVINGAREA_MEDI
+  - NONLIVINGAREA_MODE
+  - OBS_30_CNT_SOCIAL_CIRCLE
+  - OBS_60_CNT_SOCIAL_CIRCLE
+  - SK_ID_CURR
+  - WEEKDAY_APPR_PROCESS_START
+  - YEARS_BEGINEXPLUATATION_AVG
+  - YEARS_BEGINEXPLUATATION_MEDI
+  - YEARS_BEGINEXPLUATATION_MODE
+  - YEARS_BUILD_AVG
+  - YEARS_BUILD_MEDI
+  - YEARS_BUILD_MODE
+  numeric_drop:
+  - FLOORSMIN_AVG
+  - FLOORSMIN_MEDI
+  - FLOORSMIN_MODE
+  - LIVINGAREA_AVG
+  - LIVINGAREA_MODE
+  - APARTMENTS_AVG
+  - APARTMENTS_MEDI
+  - APARTMENTS_MODE
+  - ELEVATORS_MODE
+  - LIVINGAPARTMENTS_AVG
+  - LIVINGAPARTMENTS_MEDI
+  - LIVINGAPARTMENTS_MODE
+  - YEARS_BEGINEXPLUATATION_MEDI
+  - YEARS_BEGINEXPLUATATION_AVG
+  - YEARS_BEGINEXPLUATATION_MODE
+  - YEARS_BUILD_MODE
+  - YEARS_BUILD_MEDI
+  - YEARS_BUILD_AVG
+  - COMMONAREA_AVG
+  - COMMONAREA_MEDI
+  - COMMONAREA_MODE
+  - ENTRANCES_AVG
+  - ENTRANCES_MEDI
+  - ENTRANCES_MODE
+  - BASEMENTAREA_AVG
+  - BASEMENTAREA_MEDI
+  - BASEMENTAREA_MODE
+  - LANDAREA_MEDI
+  - LANDAREA_AVG
+  - LANDAREA_MODE
+  - NONLIVINGAREA_AVG
+  - NONLIVINGAREA_MEDI
+  - NONLIVINGAREA_MODE
+  - NONLIVINGAPARTMENTS_AVG
+  - NONLIVINGAPARTMENTS_MEDI
+  - NONLIVINGAPARTMENTS_MODE
+  - AMT_REQ_CREDIT_BUREAU_YEAR
+  - AMT_REQ_CREDIT_BUREAU_MON
+  - AMT_REQ_CREDIT_BUREAU_QRT
+  - AMT_REQ_CREDIT_BUREAU_DAY
+  - AMT_REQ_CREDIT_BUREAU_WEEK
+  - AMT_REQ_CREDIT_BUREAU_HOUR
+  - DEF_30_CNT_SOCIAL_CIRCLE
+  - DEF_60_CNT_SOCIAL_CIRCLE
+  - OBS_60_CNT_SOCIAL_CIRCLE
+  - OBS_30_CNT_SOCIAL_CIRCLE
+  - AMT_INCOME_TOTAL
+  - HOUR_APPR_PROCESS_START
+  - CNT_FAM_MEMBERS
+  - CNT_CHILDREN
+  - AMT_CREDIT
+  categorical_drop:
+  - FONDKAPREMONT_MODE
+  - NAME_TYPE_SUITE
+  - WEEKDAY_APPR_PROCESS_START
+  categorical_decisions:
+    OCCUPATION_TYPE:
+      action: keep
+      keep_nan_as_category: true
+      group_map:
+        Waiters/barmen staff: Waiters/barmen and security
+        Security staff: Waiters/barmen and security
+        Realty agents: Realty and medicine
+        Medicine staff: Realty and medicine
+        Secretaries: Secretaries and Private staff
+        Private service staff: Secretaries and Private staff
+        IT staff: 'IT and HR '
+        HR staff: 'IT and HR '
+      note: IV сконцентрирован в __MISSING__, проверить на этапе отбора фич
+    ORGANIZATION_TYPE:
+      action: keep_with_grouping
+      keep_xna_as_category: true
+      group_map:
+        'Industry: type 13': Industry_high
+        'Industry: type 8': Industry_high
+        'Industry: type 1': Industry_high
+        'Industry: type 3': Industry_high
+        'Industry: type 4': Industry_high
+        'Industry: type 2': Industry_low
+        'Industry: type 5': Industry_low
+        'Industry: type 6': Industry_low
+        'Industry: type 7': Industry_low
+        'Industry: type 9': Industry_low
+        'Industry: type 10': Industry_low
+        'Industry: type 11': Industry_low
+        'Industry: type 12': Industry_low
+        'Trade: type 3': Trade_high
+        'Trade: type 7': Trade_high
+        'Trade: type 1': Trade_high
+        'Trade: type 2': Trade_low
+        'Trade: type 5': Trade_low
+        'Trade: type 6': Trade_low
+        'Trade: type 4': Trade_low
+        'Transport: type 3': Transport_high
+        'Transport: type 4': Transport_mid
+        'Transport: type 2': Transport_low
+        'Transport: type 1': Transport_low
+        Business Entity Type 1: Business_Entity_1
+        Business Entity Type 2: Business_Entity_2
+        Business Entity Type 3: Business_Entity_3
+      grouping_rationale: 58 категорий → ~18, семейства по префиксу + бины по риску
+      check_collinearity_with:
+      - OCCUPATION_TYPE
+      - DAYS_EMPLOYED
+      note: XNA даёт 1/3 IV; проверить пересечение с OCCUPATION_TYPE.__MISSING__
+    NAME_INCOME_TYPE:
+      action: keep
+      group_map:
+        Maternity leave: Not_working
+        Unemployed: Not_working
+        Student: Not_working
+        Businessman: Commercial associate
+      keep_nan_as_category: false
+      check_collinearity_with:
+      - DAYS_EMPLOYED
+      - CODE_GENDER
+      - DAYS_BIRTH
+      note: '4 редкие категории объединены по бизнес-логике: Not_working = Maternity+Unemployed+Student
+        (нет активного дохода), Businessman → Commercial associate (бизнес-семантика).
+        IV ≈ 0.05 — фича средней силы, ключевой вклад даёт Pensioner (-0.43).'
+    NAME_EDUCATION_TYPE:
+      action: keep
+      keep_nan_as_category: false
+      monotonic_trend: descending
+      group_map:
+        Academic degree: Higher education
+      group_rare: true
+      rare_threshold: 0.005
+      note: IV≈0.051, 77% IV сосредоточено в Higher education — фича стабильна
+    CODE_GENDER:
+      action: keep
+      keep_nan_as_category: false
+      monotonic_trend: auto
+      group_map:
+        XNA: F
+      group_rare: true
+      rare_threshold: 0.005
+      note: 'XNA: 4 записи, 0 дефолтов, bad_rate=0 — артефакт, сливаем с F (доминирующая
+        категория). IV≈0.039 — фича слабо-средняя, но интерпретируемая (мужчины рискованнее),
+        оставляем.'
+    WALLSMATERIAL_MODE:
+      action: keep
+      keep_nan_as_category: true
+      monotonic_trend: descending
+      group_map:
+        Others: Stone, brick
+        Mixed: Stone, brick
+      group_rare: true
+      rare_threshold: 0.01
+      note: 'IV≈0.027 — слабая, но монотонная (descending) и интерпретируемая (дерево/кирпич
+        рискованнее панели/монолита). __MISSING__ 50.8% с bad_rate=0.091 выше среднего
+        — оставляем отдельной категорией. Others(0.083) и Mixed(0.075) близки к Stone,
+        brick(0.074) — сливаем. Monolithic(0.047) оставляем отдельно, несмотря на
+        редковость: сливать с Panel(0.063) = потеря сигнала.'
+    EMERGENCYSTATE_MODE:
+      action: keep
+      keep_nan_as_category: true
+      monotonic_trend: auto
+      group_map: {}
+      group_rare: true
+      rare_threshold: 0.01
+      note: 'IV≈0.024 — на грани порога 0.02, перепроверить после корреляционного
+        фильтра. Yes (0.76%, bad_rate=0.0958) и __MISSING__ (47.4%, bad_rate=0.0926)
+        статистически неразличимы, оба > No (0.0696) — сигнал по сути бинарный: {Yes,
+        Missing} vs {No}. Слияние Yes с __MISSING__ НЕ делаем (семантика теряется,
+        а WoE по 223 events стабилен). Пометить: фича-кандидат на drop, если IV упадёт
+        после отсева коррелирующих фич (вероятно, пересекается с HOUSING-блоком).'
+    HOUSETYPE_MODE:
+      action: keep
+      keep_nan_as_category: true
+      monotonic_trend: descending
+      group_map:
+        terraced house: specific housing
+      group_rare: true
+      rare_threshold: 0.005
+      note: 'IV≈0.022 — на грани порога. Terraced house (0.39%, bad_rate=0.085) и
+        specific housing (0.49%, bad_rate=0.1014) — оба редкие, WoE нестабилен. Сливаем
+        в ''specific housing'' (группа ~2711 записей, ~0.9%). __MISSING__ 50.2% с
+        bad_rate=0.0915 — оставляем отдельно. Фактически бинарный сигнал: {specific
+        housing, __MISSING__} vs {block of flats}. Пометить: кандидат на drop после
+        корреляционного фильтра (сильно пересекается с WALLSMATERIAL_MODE и HOUSING-блоком
+        в целом).'
+    NAME_FAMILY_STATUS:
+      action: keep
+      keep_nan_as_category: false
+      monotonic_trend: descending
+      group_map:
+        Unknown: Married
+      group_rare: true
+      rare_threshold: 0.005
+      note: 'IV≈0.022 — на грани, но проходит. Bad_rate строго монотонен: Civil marriage
+        (0.0994) > Single (0.0981) > Separated (0.0819) > Married (0.0756) > Widow
+        (0.0582) — 5 категорий сохраняем как есть. Unknown: 2 записи, 0 дефолтов,
+        extreme=True — артефакт, сливаем в доминирующую Married (63.9%), чтобы не
+        плодить нулевой WoE. Пометить как кандидата на drop, если после корреляционного
+        фильтра IV уйдёт ниже 0.02.'
+    NAME_HOUSING_TYPE:
+      action: keep
+      keep_nan_as_category: false
+      monotonic_trend: descending
+      group_map:
+        Co-op apartment: House / apartment
+        Office apartment: House / apartment
+      group_rare: true
+      rare_threshold: 0.01
+      note: 'IV до группировки ≈ 0.0157 (ниже порога 0.02). После слияния редких Co-op
+        (0.36%, br=0.079) и Office apartment (0.85%, br=0.066) с House/apartment (88.7%,
+        br=0.078) — IV ≈ 0.0235, проходит порог. Причина: редкие категории с почти
+        нулевым WoE-вкладом размывали IV. Монотонность сохраняется: Rented (0.123)
+        > With parents (0.117) > Municipal (0.085) > House+ (0.078). Пропусков нет.'
+    NAME_CONTRACT_TYPE:
+      action: keep_with_flag
+      keep_nan_as_category: false
+      monotonic_trend: descending
+      group_map: {}
+      group_rare: false
+      note: 'IV≈0.015 — НИЖЕ порога 0.02. Формально кандидат на drop. НО: (1) WoE
+        монотонен и семантически силён — Revolving loans (br=0.055) вдвое безопаснее
+        Cash loans (br=0.084); (2) фича фундаментальна для продукта — отсечение contract_type
+        на входе ломает интерпретацию остальных фич; (3) 90/10 сплит — не редкие категории,
+        а реальные бизнес-сегменты. Решение: ОСТАВИТЬ, но пометить как кандидата №1
+        на пересмотр на этапе 5 — если после корреляционного фильтра фича не улучшает
+        Gini, убрать.'
+    FONDKAPREMONT_MODE:
+      action: drop
+      reason: 'IV≈0.013 — ниже порога 0.02. WoE монотонен и логичен, но: (1) фича
+        нишевая (режим управления капремонтом), без структурной ценности для скоринга,
+        в отличие от NAME_CONTRACT_TYPE; (2) 68% пропусков и __MISSING__ = самая рискованная
+        группа — сигнал слабый и, вероятно, поглощается более сильными HOUSING/WALLSMATERIAL
+        фичами; (3) информационный вклад в IV размазан по 5 категориям, ни одна не
+        даёт ≥0.006 iv_contrib. Решение: drop. Проверить на этапе 5 — если после отсева
+        коррелирующих фич IV вырастет (маловероятно), вернуть.'
+    FLAG_OWN_CAR:
+      action: recode_to_flag
+      target_group: flag_cols
+      mapping:
+        N: 0
+        Y: 1
+      use_in_logreg: false
+      use_in_xgb: true
+      reason: 'Семантически это бинарный флаг (Y/N), а не категориальная фича — попал
+        в cat_cols из-за dtype=object. IV≈0.0066 — в разы ниже порога 0.02, для WoE-логрега
+        бесполезен. Но: (1) для XGBoost может дать нелинейный вклад в комбинации с
+        другими фичами (например, OWN_CAR × возраст × доход), (2) в Home Credit есть
+        парный FLAG_OWN_REALTY как int64 — нужно привести к единому формату, (3) убрав
+        WoE-версию, мы экономим слот в champion-модели и не платим за бесполезный
+        признак. Решение: перекодировать в 0/1, положить в flag_cols, исключить из
+        champion, оставить в challenger.'
+    NAME_TYPE_SUITE:
+      action: drop
+      reason: 'IV≈0.002 — в 10 раз ниже порога 0.02. Абсолютный аутсайдер среди всех
+        категориальных. WoE почти плоский (от −0.42 до +0.22), сигнал размазан по
+        8 категориям, из которых 5 редких (<1%) и одна __MISSING__ с экстремальным,
+        но статистически ничтожным WoE=−0.42. Ни одной крупной категории с осмысленным
+        вкладом в IV: max iv_contrib = 0.00082 (Family). Нет структурной ценности
+        — фича описывает сопровождающего при заявке, что не имеет банковской интерпретации
+        для риска дефолта. drop без пересмотра на этапе 5.'
+    WEEKDAY_APPR_PROCESS_START:
+      action: drop
+      reason: IV≈0.0007 — в 30 раз ниже порога 0.02. Самый слабый признак среди всех
+        категориальных. bad_rate варьируется от 0.0776 (MONDAY) до 0.0835 (TUESDAY)
+        — разброс 0.6 pp, статистически неотличим от шума (95% ДИ для n=50k при p=0.08
+        покрывает ±0.7 pp). WoE почти плоский (−0.04..+0.04), ни одна категория не
+        даёт iv_contrib > 0.0003. Семантически — день недели подачи заявки; не имеет
+        банковской интерпретации для риска дефолта, регулятор не примет как обоснование.
+        drop без пересмотра.
+    FLAG_OWN_REALTY:
+      action: recode_to_flag
+      target_group: flag_cols
+      mapping:
+        N: 0
+        Y: 1
+      use_in_logreg: false
+      use_in_xgb: true
+      reason: 'Семантически — бинарный флаг (Y/N), попал в cat_cols из-за dtype=object.
+        IV≈0.0005 — в 40 раз ниже порога 0.02, для WoE-логрега бесполезен. bad_rate
+        N=0.0832 vs Y=0.0796 — разброс 0.4 pp, в пределах шумового коридора. WoE почти
+        плоский (−0.015..+0.034). Решение: перекодировать в 0/1, положить в flag_cols,
+        исключить из champion, оставить в challenger — как и FLAG_OWN_CAR. Привести
+        к единому формату с остальными FLAG_* (int8), обеспечить консистентность prepare.py.'
+  numeric_decisions:
+    EXT_SOURCE_1:
+      action: keep
+      monotonic_trend: descending
+      keep_nan_as_category: true
+    EXT_SOURCE_2:
+      action: keep
+      monotonic_trend: descending
+      keep_nan_as_category: false
+    EXT_SOURCE_3:
+      action: keep
+      monotonic_trend: descending
+      keep_nan_as_category: true
+    DAYS_EMPLOYED:
+      action: keep
+      monotonic_trend: descending
+      keep_nan_as_category: true
+      sensor:
+        value: 365243
+        replace: null
+        add_flag: true
+    DAYS_BIRTH:
+      action: keep
+      monotonic_trend: ascending
+      keep_nan_as_category: false
+    DAYS_ID_PUBLISH:
+      action: keep
+      monotonic_trend: ascending
+      keep_nan_as_category: false
+    FLOORSMAX_AVG:
+      action: keep
+      monotonic_trend: descending
+      keep_nan_as_category: true
+    FLOORSMAX_MEDI:
+      action: keep
+      monotonic_trend: descending
+      keep_nan_as_category: true
+    FLOORSMAX_MODE:
+      action: keep
+      monotonic_trend: descending
+      keep_nan_as_category: true
+    LIVINGAREA_MEDI:
+      action: keep
+      monotonic_trend: descending
+      keep_nan_as_category: true
+    ELEVATORS_AVG:
+      action: keep
+      monotonic_trend: descending
+      keep_nan_as_category: true
+    ELEVATORS_MEDI:
+      action: keep
+      monotonic_trend: descending
+      keep_nan_as_category: true
+    AMT_GOODS_PRICE:
+      action: keep
+      monotonic_trend: auto
+      keep_nan_as_category: true
+    AMT_ANNUITY:
+      action: keep
+      monotonic_trend: auto
+      keep_nan_as_category: false
+    DAYS_REGISTRATION:
+      action: keep
+      monotonic_trend: auto
+      keep_nan_as_category: false
+    DAYS_LAST_PHONE_CHANGE:
+      action: keep
+      monotonic_trend: auto
+      keep_nan_as_category: false
+    REGION_POPULATION_RELATIVE:
+      action: keep
+      monotonic_trend: auto
+      keep_nan_as_category: false
+    OWN_CAR_AGE:
+      action: keep
+      monotonic_trend: auto
+      keep_nan_as_category: true
+    TOTALAREA_MODE:
+      action: keep
+      monotonic_trend: auto
+      keep_nan_as_category: true
+  recode_to_categorical:
+  - REGION_RATING_CLIENT
+  - REGION_RATING_CLIENT_W_CITY
+  categorical_extra:
+    REGION_RATING_CLIENT:
+      monotonic_trend: ascending
+      keep_nan_as_category: false
+    REGION_RATING_CLIENT_W_CITY:
+      monotonic_trend: ascending
+      keep_nan_as_category: false
+  sensors:
     DAYS_EMPLOYED:
       value: 365243
       replace: null
       add_flag: true
+  final_review_candidates:
+  - EMERGENCYSTATE_MODE
+  - HOUSETYPE_MODE
+  - NAME_FAMILY_STATUS
+  - NAME_CONTRACT_TYPE
 missing:
   drop_threshold: 0.9
   flag_threshold: 0.5
@@ -151,3 +459,15 @@ monitoring:
   psi_thresholds:
     warn: 0.1
     alert: 0.25
+  psi_watchlist: []
+  psi_semantic_watchlist:
+  - AMT_GOODS_PRICE
+  - AMT_CREDIT
+  - DAYS_ID_PUBLISH
+  - DAYS_LAST_PHONE_CHANGE
+  psi_last_check:
+    train_vs_test_unlabeled:
+      max_psi: 0.083
+      max_psi_feature: AMT_GOODS_PRICE
+      n_features_over_warn: 0
+      verdict: no drift
