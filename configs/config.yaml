@@ -169,6 +169,37 @@ columns:
         Business Entity Type 1: Business_Entity_1
         Business Entity Type 2: Business_Entity_2
         Business Entity Type 3: Business_Entity_3
+        Construction: Construction_agriculture
+        Agriculture: Construction_agriculture
+        Restaurant: Hospitality_cleaning
+        Cleaning: Hospitality_cleaning
+        Hotel: Hospitality_cleaning
+        Services: Services_misc
+        Advertising: Services_misc
+        Legal Services: Services_misc
+        Realtor: Services_misc
+        Postal: Services_misc
+        Mobile: Mobile_telecom
+        Telecom: Mobile_telecom
+        Bank: Bank_insurance
+        Insurance: Bank_insurance
+        Government: Public_sector
+        Police: Public_sector
+        Military: Public_sector
+        Security Ministries: Public_sector
+        Emergency: Public_sector
+        Medicine: Public_sector
+        Kindergarten: Public_sector
+        School: Public_sector
+        University: Public_sector
+        Culture: Public_sector
+        Religion: Public_sector
+        Electricity: Public_sector
+        Self-employed: Self-employed
+        Security: Security
+        Housing: Housing
+        XNA: XNA
+        Other: Other
       grouping_rationale: 58 категорий → ~18, семейства по префиксу + бины по риску
       check_collinearity_with:
       - OCCUPATION_TYPE
