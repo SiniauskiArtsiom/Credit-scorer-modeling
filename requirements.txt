@@ -14,6 +14,7 @@ charset-normalizer==3.5.2
 cloudpickle==3.1.2
 comm==0.2.3
 contourpy==1.4.0
+-e git+https://github.com/SiniauskiArtsiom/Credit-scorer-modeling.git@6847f7a11e8c1b1de15c82dfa6a678f42c2c159f#egg=credit_scoring_pd_model
 cycler==0.12.1
 debugpy==1.8.22
 defusedxml==0.7.1
@@ -78,6 +79,7 @@ prompt_toolkit==3.0.53
 psutil==7.2.2
 ptyprocess==0.7.0
 pure_eval==0.2.4
+pyarrow==25.0.1
 pycparser==3.0
 Pygments==2.21.0
 pyparsing==3.3.3
