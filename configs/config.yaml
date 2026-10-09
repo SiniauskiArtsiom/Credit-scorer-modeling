@@ -1,6 +1,7 @@
+
 data:
-  train_path: ../data/raw/application_train.csv
-  test_unlabeled_path: ../data/raw/application_test.csv
+  train_path: data/raw/application_train.csv
+  test_unlabeled_path: data/raw/application_test.csv
   target: TARGET
   id_col: SK_ID_CURR
   prevalence: 0.08072881945686496
@@ -60,7 +61,6 @@ columns:
   - NONLIVINGAREA_MODE
   - OBS_30_CNT_SOCIAL_CIRCLE
   - OBS_60_CNT_SOCIAL_CIRCLE
-  - SK_ID_CURR
   - WEEKDAY_APPR_PROCESS_START
   - YEARS_BEGINEXPLUATATION_AVG
   - YEARS_BEGINEXPLUATATION_MEDI
