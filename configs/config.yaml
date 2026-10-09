@@ -395,7 +395,7 @@ columns:
       keep_nan_as_category: true
     DAYS_EMPLOYED:
       action: keep
-      monotonic_trend: descending
+      monotonic_trend: ascending
       keep_nan_as_category: true
       sensor:
         value: 365243
