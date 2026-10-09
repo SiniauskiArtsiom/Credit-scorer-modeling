@@ -16,7 +16,7 @@ clarabel==0.11.1
 cloudpickle==3.1.2
 comm==0.2.3
 contourpy==1.4.0
--e git+https://github.com/SiniauskiArtsiom/Credit-scorer-modeling.git@022cb29b3fff42c6fd1fa7d41c4521c0ffca56f9#egg=credit_scoring_pd_model
+-e git+https://github.com/SiniauskiArtsiom/Credit-scorer-modeling.git@e145be3de7d2ca129f5d787dc2760d60852bda13#egg=credit_scoring_pd_model
 cvxpy==1.9.3
 cycler==0.12.1
 debugpy==1.8.22
@@ -114,7 +114,9 @@ scs==3.3.1
 seaborn==0.13.2
 Send2Trash==2.1.0
 setuptools==84.0.0
+shap==0.53.0
 six==1.17.0
+slicer==0.0.8
 soupsieve==2.10
 sparsediffpy==0.6.1
 stack-data==0.6.3
@@ -123,6 +125,7 @@ terminado==0.18.1
 threadpoolctl==3.7.0
 tinycss2==1.5.1
 tornado==6.5.10
+tqdm==4.70.1
 traitlets==5.16.1
 typing_extensions==4.16.0
 tzdata==2026.5
@@ -134,3 +137,4 @@ webencodings==0.6.1
 websocket-client==1.9.2
 widgetsnbextension==4.0.16
 wrapt==2.5.0
+xgboost==3.4.1

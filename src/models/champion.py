@@ -238,7 +238,9 @@ def save_artifacts(
 ) -> None:
     artifact_dir.mkdir(parents=True, exist_ok=True)
     with open(artifact_dir / "champion_logit.pkl", "wb") as f:
-        pickle.dump({"model": model, "scaler": scaler}, f)
+        pickle.dump({"model": model}, f)
+    with open(artifact_dir / "scorecard_params.json", "w") as f:
+        json.dump(scaler.describe(), f, indent=2)
     coef_table.to_csv(artifact_dir / "coef_table.csv", index=False)
     scaler.points_table().to_csv(artifact_dir / "scorecard.csv", index=False)
     deciles.to_csv(artifact_dir / "score_deciles.csv", index=False)
