@@ -1,0 +1,14 @@
+{
+  "n_features": 19,
+  "feature_psi_max": 0.08285,
+  "feature_psi_max_name": "AMT_GOODS_PRICE",
+  "feature_psi_median": 0.00168,
+  "watchlist": [],
+  "alerts": [],
+  "score_psi": 0.0002897753075636412,
+  "score_psi_verdict": "no_drift",
+  "thresholds": {
+    "no_drift": 0.1,
+    "warn": 0.25
+  }
+}
