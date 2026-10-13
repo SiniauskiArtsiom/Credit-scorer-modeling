@@ -525,3 +525,8 @@ selected_features:
 - WALLSMATERIAL_MODE
 - NAME_FAMILY_STATUS
 - OWN_CAR_AGE
+business:
+  EAD_mean: 500000
+  LGD: 0.60
+  rate_total: 0.15
+  cost_ratio_range: [2, 4, 6, 10]

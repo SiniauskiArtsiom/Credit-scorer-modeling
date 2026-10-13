@@ -1,0 +1,54 @@
+{
+  "business_params": {
+    "EAD_mean": 500000,
+    "LGD": 0.6,
+    "rate_total": 0.15,
+    "cost_ratio_range": [
+      2,
+      4,
+      6,
+      10
+    ]
+  },
+  "optimal_base": {
+    "cutoff": 0.1913,
+    "approval_rate": 0.9187,
+    "bad_rate_approved": 0.0637,
+    "profit_total": 2166300000.0,
+    "expected_loss_total": 809699999.9999999
+  },
+  "sensitivity": [
+    {
+      "cost_ratio": 2,
+      "LGD": 0.3,
+      "optimal_cutoff": 0.352,
+      "approval_rate": 0.9889,
+      "bad_rate_approved": 0.0771,
+      "profit_total": 2629350000.0
+    },
+    {
+      "cost_ratio": 4,
+      "LGD": 0.6,
+      "optimal_cutoff": 0.1809,
+      "approval_rate": 0.9083,
+      "bad_rate_approved": 0.0621,
+      "profit_total": 2166750000.0
+    },
+    {
+      "cost_ratio": 6,
+      "LGD": 0.9,
+      "optimal_cutoff": 0.1466,
+      "approval_rate": 0.8579,
+      "bad_rate_approved": 0.0564,
+      "profit_total": 1797075000.0
+    },
+    {
+      "cost_ratio": 10,
+      "LGD": 1.0,
+      "optimal_cutoff": 0.1274,
+      "approval_rate": 0.8175,
+      "bad_rate_approved": 0.0526,
+      "profit_total": 1687525000.0
+    }
+  ]
+}
